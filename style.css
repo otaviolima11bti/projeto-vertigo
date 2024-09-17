@@ -9,7 +9,7 @@
     --gray-800: #1E293B;
     --gray-600: #475569;
     --gray-400: #94a3b9;
-    --gray-200:  #e2e8f0;
+    --gray-200: #e2e8f0;
     --purple: #7c3aed;
     --white: #fff;
 }
@@ -22,12 +22,12 @@ header {
     justify-content: center;
     align-items: center;
     margin-bottom: 3.7rem;
-    
+
 }
 
 main {
     padding-inline: 1.5rem;
-    
+
 }
 
 .descricao {
@@ -35,7 +35,7 @@ main {
 }
 
 .descricao h1 {
-    color:var(--gray-800);
+    color: var(--gray-800);
     margin-bottom: 1rem;
     font-size: 1.5625rem;
 }
@@ -65,13 +65,14 @@ main {
 .login input {
     padding: 1rem 0.75rem;
     border: 1px solid var(--gray-200);
-    border-radius: 0.25rem ;
+    border-radius: 0.25rem;
     color: var(--gray-800);
 }
 
 .login input::placeholder {
     color: var(--gray-400);
 }
+
 .login input:hover,
 .login input:focus {
     outline: 1px solid var(--purple);
@@ -86,7 +87,7 @@ main {
 .login a :hover {
     text-decoration: underline;
 }
- 
+
 .login button {
     margin-top: 1rem;
     margin-bottom: 2rem;
@@ -100,20 +101,30 @@ main {
     color: var(--white);
 }
 
-.login > p {
+.login>p {
     color: var(--gray-600);
 }
 
-.login > p a {
+.login>p a {
     font-weight: 700;
     font-size: 1rem;
 }
 
+.bg-desktop {
+    display: none;
+}
+
 @media(min-width: 1000px) {
+     
+    body {
+        display: flex;
+    }
+    
     header {
         background: none;
         justify-content: flex-start;
-        
+        padding-inline: 7rem;
+
     }
 
     header img {
@@ -123,4 +134,14 @@ main {
     main {
         padding-inline: 7rem;
     }
+
+    .conteudo {
+        width: 100%;
+    }
+
+    .bg-desktop {
+        display: block;
+        width: 100%;
+    }
 }
+    
